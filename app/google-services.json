@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "62196263074",
+    "firebase_url": "https://instwtf.firebaseio.com",
+    "project_id": "instwtf",
+    "storage_bucket": "instwtf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62196263074:android:1ada3460b2497011",
+        "android_client_info": {
+          "package_name": "com.example.kiri4.instwtf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62196263074-8ammud29bjlbiq687fq3tgggg69ficbl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kiri4.instwtf",
+            "certificate_hash": "51de7d39e21bce09dc59d42cc8792f17d3cd55f6"
+          }
+        },
+        {
+          "client_id": "62196263074-ahleivigjejsqit4v5enbf0rasasmkc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWnR9QW-MM0RryvMNBNBD-RTtffY9lJC4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62196263074-ahleivigjejsqit4v5enbf0rasasmkc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

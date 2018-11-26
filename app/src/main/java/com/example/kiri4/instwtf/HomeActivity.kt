@@ -1,10 +1,13 @@
 package com.example.kiri4.instwtf
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : BaseActivity(0) {
     private val TAG = "HomeActivity"
+    private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -12,5 +15,23 @@ class HomeActivity : BaseActivity(0) {
         setupBottomNavigation()
         Log.d(TAG, "onCreate")
 
+        mAuth = FirebaseAuth.getInstance()
+        mAuth.signOut()
+//        auth.signInWithEmailAndPassword("mrneverzoom@gmail.com", "vasy4000")
+//            .addOnCompleteListener{
+//                if(it.isSuccessful) {
+//                    Log.d(TAG, "signIn: success")
+//                } else {
+//                    Log.d(TAG, "signIn: failure", it.exception)
+//                }
+//            }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if(mAuth.currentUser == null) {
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        }
     }
 }

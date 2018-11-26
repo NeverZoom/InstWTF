@@ -24,6 +24,8 @@
         <activity android:name=".ProfileActivity"/>
         <activity android:name=".EditProfileActivity">
         </activity>
+        <activity android:name=".LoginActivity" android:windowSoftInputMode="stateVisible|adjustResize">
+        </activity>
     </application>
 
 </manifest>
